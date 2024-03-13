@@ -384,3 +384,15 @@ color:  rgb(133, 127, 132);
       
       .form-row button {
           margin-left: 120px;}
+
+
+.greeting{
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  background: #0d2f57;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
