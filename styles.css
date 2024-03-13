@@ -141,7 +141,7 @@ footer ul li a{
     align-items: center;
     display: flex;
     flex: none;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     gap: 60px;
     height: min-content;
@@ -170,7 +170,7 @@ footer ul li a{
 }
 
 
-.chart-photo{
+.chart-photo-testing{
     border-radius: 10px;
     flex: none;
     height: 250px;
@@ -239,6 +239,100 @@ footer ul li a{
 }
 
 .subtitle-testing p {
+font-size: 20px;
+font-weight: 500;
+letter-spacing: -0.5px;
+line-height: 1.4em;
+text-align: left;
+color:  rgb(133, 127, 132);
+}
+
+.Automatizacion-de-pruebas {
+  align-items: center;
+  display: flex;
+  flex: 1 0 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: 800px;
+  height: 600px;   
+}
+
+.chart-photo-automation{
+  border-radius: 10px;
+  flex: none;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  will-change: var(--framer-will-change-override, transform);
+}
+
+.photo-automation {
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.photo-automation img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center;
+  object-fit: cover;
+  image-rendering: auto;
+}
+
+.content-automation{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: auto;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.title-automation {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  opacity: 1;
+  transform: perspective(1200px);
+}
+
+.title-automation h4{
+  font-size: 30px;
+  letter-spacing: -0.7px;
+  line-height: 1.5em;
+  color: skyblue;
+}
+
+.subtitle-automation {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  opacity: 1;
+  transform: perspective(1200px);
+}
+
+.subtitle-automation p {
 font-size: 20px;
 font-weight: 500;
 letter-spacing: -0.5px;
