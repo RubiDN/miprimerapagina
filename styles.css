@@ -138,21 +138,32 @@ footer ul li a{
 
 
 .seccion-4{
-    align-items: center;
     display: flex;
-    flex: none;
     flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 60px;
-    height: min-content;
-    justify-content: center;
-    max-width: 1000px;
-    overflow: visible;
-    padding: 0;
-    position: relative;
+    align-items: center;
+    text-align: center;
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;    
 }
 
+.grupo-trabajo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que los grupos se envuelvan en varias filas */
+    margin-bottom: 20px; /* Ajusta el espacio entre los grupos según tus necesidades */
+    align-items: stretch;
+  }
+  
+  .grupo-trabajo > div {
+    width: 48%; /* Ajusta el ancho de cada div según tus necesidades */
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  }
+
+  
 .Testing-de-software {
     align-items: center;
     display: flex;
@@ -169,34 +180,77 @@ footer ul li a{
     height: 600px;   
 }
 
+.Automatizacion-de-pruebas {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
+    height: min-content;
+    justify-content: center;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 800px;
+    height: 600px;   
+}
+  
 
-.chart-photo-testing{
-    border-radius: 10px;
+.Desarrollo-web {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
+    height: min-content;
+    justify-content: center;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 800px;
+    height: 600px;   
+}
+
+.Lorem-ipsum {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
+    height: min-content;
+    justify-content: center;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 800px;
+    height: 600px;   
+}
+
+
+.chart-photo{
+    
     flex: none;
     height: 250px;
-    overflow: hidden;
+   /* overflow: hidden;  --esto no deja que la imagen se expanda mas alla de su tamaño proporcionado*/
     position: relative;
     width: 100%;
     will-change: var(--framer-will-change-override, transform);
 }
-.photo-testing {
-    position: absolute;
-    border-radius: inherit;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.photo-testing img {
+.chart-photo img {
+    border-radius: 10px;
     display: block;
     width: 100%;
     height: 100%;
-    border-radius: inherit;
-    object-position: center;
-    object-fit: cover;
-    image-rendering: auto;
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+    transition: transform 0.3s ease; /* Agrega una transición suave al hacer hover */
 }
+.chart-photo:hover img {
+  transform: scale(1.1);
+}
+
 
 .content-testing{
     align-items: flex-start;
@@ -211,88 +265,8 @@ footer ul li a{
     width: 100%;
 }
 
-.title-testing {
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    opacity: 1;
-    transform: perspective(1200px);
-}
 
-.title-testing h4{
-    font-size: 30px;
-    letter-spacing: -0.7px;
-    line-height: 1.5em;
-    color: skyblue;
-}
-
-.subtitle-testing {
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    opacity: 1;
-    transform: perspective(1200px);
-}
-
-.subtitle-testing p {
-font-size: 20px;
-font-weight: 500;
-letter-spacing: -0.5px;
-line-height: 1.4em;
-text-align: left;
-color:  rgb(133, 127, 132);
-}
-
-.Automatizacion-de-pruebas {
-  align-items: center;
-  display: flex;
-  flex: 1 0 0px;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 30px;
-  height: min-content;
-  justify-content: center;
-  overflow: visible;
-  padding: 0;
-  position: relative;
-  width: 800px;
-  height: 600px;   
-}
-
-.chart-photo-automation{
-  border-radius: 10px;
-  flex: none;
-  height: 250px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  will-change: var(--framer-will-change-override, transform);
-}
-
-.photo-automation {
-  position: absolute;
-  border-radius: inherit;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.photo-automation img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  object-position: center;
-  object-fit: cover;
-  image-rendering: auto;
-}
-
-.content-automation{
+.content-descrip{
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -305,7 +279,7 @@ color:  rgb(133, 127, 132);
   width: 100%;
 }
 
-.title-automation {
+.title-jobs {
   outline: none;
   display: flex;
   flex-direction: column;
@@ -315,14 +289,15 @@ color:  rgb(133, 127, 132);
   transform: perspective(1200px);
 }
 
-.title-automation h4{
+.title-jobs h4{
   font-size: 30px;
   letter-spacing: -0.7px;
   line-height: 1.5em;
   color: skyblue;
 }
 
-.subtitle-automation {
+.subtitle-jobs {
+    height: 100px; /*ANALIZAR MEJOR SOLUCION PARA TENER UN TAMAÑO MAS AJUSTADO */
   outline: none;
   display: flex;
   flex-direction: column;
@@ -330,14 +305,15 @@ color:  rgb(133, 127, 132);
   flex-shrink: 0;
   opacity: 1;
   transform: perspective(1200px);
+  
 }
 
-.subtitle-automation p {
+.subtitle-jobs p{
 font-size: 20px;
 font-weight: 500;
 letter-spacing: -0.5px;
 line-height: 1.4em;
-text-align: left;
+text-align: justify;
 color:  rgb(133, 127, 132);
 }
 
@@ -490,3 +466,5 @@ color:  rgb(133, 127, 132);
   align-items: center;
   flex-wrap: wrap;
 }
+
+

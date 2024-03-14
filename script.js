@@ -26,4 +26,3 @@ if(textoTitulo=="Holi"){
 } else {
     console.log ("no se cumple")
 }
-
